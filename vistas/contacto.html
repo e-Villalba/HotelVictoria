@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="../estilos/estilo.css">
+    <title>Document</title>    
+</head>
+<body>
+    <div id="grillaContacto">
+        <header >        
+            <nav class="navMenu">
+                <ul class="ulMenu">
+                    <li ><a href="../index.html">Inicio</a></li>
+                    <li><a href="#">Contacto</a></li>                
+                    <li ><a href="#">Servicios</a></li>
+                    <li ><a href="#">Fotos</a></li>
+                    <li ><a href="#">Ubicación</a></li>
+                </ul>
+            </nav> 
+        
+        </header>        
+        <section id="centro" >        
+            <main>
+                <div>
+                    <h1 class="h1PagesContacto">No te quedes con dudas, escribinos y te contamos lo que necesites saber.</h1>
+                </div>
+                <div id="contForm">
+                    <form id="divDatosForm" action="" method="" enctype="">
+                        <fieldset  >
+                        <div >
+                            <div>
+                                <h2 class="h1PagesContacto">Info Personal</h2>                    
+                                <p class="pContacto">Ya nos visitaste antes?</p>
+                            </div>
+                            <div>    
+                                <input class="datosForm"  type="radio" name="campoUserVisitanteS" id="idVisitanteS" value="S">Si    
+                                <input class="datosForm" type="radio" name="campoUserVisitanteN" id="idVisitanteN" value="N">No
+                            </div>
+                            <div>
+                                <label class="pContacto" for="idNombre">Nombre</label>
+                            </div>
+                            <div><input class="datosForm" type="text" name="campoNombre" id="idNombre" placeholder="Ingrese su Nombre"></div>
+            
+                            <div><label class="pContacto" for="idApellido">Apellido</label></div>                
+                            <div><input class="datosForm" type="text" name="campoApellido" id="idApellido" placeholder="Ingrese su Apellido"></div>
+                            
+                            <div><label class="pContacto" for="userEmail">Ingrese su e-mail</label></div>
+                            <div>
+                                <input class="datosForm" type="email" name="" id="userEmail" placeholder="Ingrese su e-mail">
+                            </div>
+                            <div>
+                                <input class="datosForm" type="checkbox" name="" id="userNovedades" required>
+                                <label class="pContacto" for="userNovedades">Me gustaría recibir novedades por email?</label>
+                            </div>
+                            <div>
+                                <label class="pContacto" for="userComoVac">Cómo disfrutás tus vacaciones?</label>
+                            </div>
+                            <div>
+                                <select class="datosForm" name="campouserComoVac" id="userComoVac" >
+                                    <option class="pContacto" value="" disabled selected>Seleccioná como disfrutás tus vacaciones</option>
+                                    <option class="pContacto" value="Solo">Solo</option>
+                                    <option class="pContacto" value="Familia">En Familia</option>
+                                    <option class="pContacto" value="Grupo">En grupo de amigos</option>
+                                </select>
+                            </div>                
+                            <div><label class="pContacto" for="userComentarios">Dejanos tus consultas/comentarios</label></div>
+                            <div>
+            
+                                <textarea class="datosForm"  name="campoUserComentarios" id="userComentarios" cols="41" rows="10"></textarea>
+            
+                            </div>
+                        </div>
+                        <div >
+                            <input class="btnFieldset" type="submit" value="Enviar">
+                            <input id="btnFieldset" class="btnFieldset" type="reset" value="Borrar Datos">                
+                        </div>    
+                        </fieldset>
+                    
+                    </form>
+                </div>
+            </main> 
+        </section> 
+        <footer class="borderFooter">
+            <div id="flexFooter">        
+                <div id="contImgFooter">
+                    <img class="imgFooter" src="../imagenes/iconos/facebook.png" alt="Facebook" >
+                    <img class="imgFooter" src="../imagenes/iconos/instagram.png" alt="Instagram" >
+                    <img class="imgFooter" src="../imagenes/iconos/twitter.png" alt="Twitter">            
+                </div>                    
+            </div>
+        </footer>
+    </div>   
+</body>
+</html>

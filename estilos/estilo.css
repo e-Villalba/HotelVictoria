@@ -1,0 +1,619 @@
+
+* { 
+  margin :0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+#grillaIndex {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "centro"      
+      "footer";
+    grid-template-rows:5% 50% 7%;
+    grid-template-columns: 100%;
+    column-gap: 1rem; 
+ }
+ #grillaContacto {
+  display: grid;
+  grid-template-areas:
+    "header "
+    "centro"      
+    "footer";
+  grid-template-rows:5% auto 7%;
+  grid-template-columns: 100%;
+  column-gap: 1rem;  
+}
+#flexFooter {
+  display: flex; 
+  flex-direction: row;
+  /*align-items:center;*/
+  justify-content: center;
+}
+#contImgFooter
+{
+ display: flex; 
+ flex-direction: row;
+ width: 20%;
+ justify-content: space-evenly;
+}
+#divDatosForm
+{
+  width: 100%; 
+}
+#contForm
+{
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+ body{
+  background-color: rgb(186, 202, 177); 
+}
+
+
+ .navMenu{   
+  margin-top: -13px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.ulMenu
+{
+   text-align: right;
+   margin-right: 2.5%;
+}
+
+li {
+  /*display: inline-block;*/
+  font-size: 50px;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+}
+ul li a
+{
+  text-decoration: none;
+}
+
+ .border {
+    border: 1px solid black;          
+ }
+ .borderFooter
+ {
+  padding-top: 1%;
+  text-align: center;
+  }
+  .imgFooter
+  {   
+   width: 10%;
+  }
+
+ header {
+    grid-area: header;
+ }
+ footer {
+    grid-area: footer;
+ }
+ section#centro {
+   grid-area: centro;     
+   height: 100%;
+ }
+ section#centro > div
+ {
+    width: 100%;      
+    height: 100%;
+ }
+
+.imagen
+ {
+   object-fit:fill;
+   width: 100%;
+   height: 100%;
+
+ }
+ 
+
+
+.textoIndexFoto{
+  position: absolute;
+  top: 10%;
+  left: 12%;    
+}
+
+.h1Pages{ 
+  color: rgb(52, 43, 59);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;  
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:320px) and (max-width:374px)
+ {
+  #grillaIndex {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "centro"      
+      "footer";
+    grid-template-rows:30% 50% 7%;
+    grid-template-columns: 100%;
+    column-gap: 1rem; 
+ }
+ #grillaContacto {
+  display: grid;
+  grid-template-areas:
+    "header "
+    "centro"      
+    "footer";
+  grid-template-rows:14% auto 7%;
+  grid-template-columns: 100%;
+  column-gap: 1rem; 
+}
+#flexFooter {
+  display: flex; 
+  flex-direction: row;
+  /*align-items:center;*/
+  justify-content: center;
+}
+#contImgFooter
+{
+ display: flex; 
+ flex-direction: row;
+ width: 20%;
+ justify-content: space-evenly;
+}
+#divDatosForm
+{
+  width: 100%; 
+}
+#contForm
+{
+  width: 88%;
+ 
+}
+
+ .ulMenu
+ {
+    text-align: center;    
+ }
+  header
+  {
+    margin-top:18%;   
+  }
+ .navMenu{   
+          margin-top: -55px;
+          margin-bottom: 25px;
+          width: 100%;
+    }
+  li {
+    /*display: inline-block;*/
+    
+    font-size: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+  }
+    .h1Pages{
+      padding:8px;   
+      color: rgb(52, 43, 59);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 8px;
+    }
+    .h1PagesContacto{
+      padding:8px;   
+      color: rgb(52, 43, 59);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+    form
+    {  
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
+    }
+    .h2Pages{
+       text-align:left;   
+       padding:8px;   
+       color: rgb(52, 43, 59);
+       font-family: 'Montserrat', sans-serif;
+       font-size: 20px;
+       margin-left: 10%;
+    }
+    form fieldset div
+    {
+       margin-left: 2%;
+       line-height: 24px;     
+    }
+    .datosForm
+    {
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif   ;
+       font-size: 12px;
+    }
+    
+    .btnFieldset
+    {
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       font-size: 13px;
+       margin-left: 2%;
+       width: 100px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+    }
+    .pContacto
+    {
+       font-size: 14px;
+    }
+
+    .textoIndexFoto{
+      position: absolute;
+      top: 13%;
+      left: 2%;  
+    }    
+    .borderFooter
+    {
+     padding-top: 1%;
+     text-align: center;
+     }
+    .imgFooter
+    {   
+      width: 24%;
+    }
+    
+  }
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  @media only screen and (min-width:375px) and (max-width:424px)
+  {
+    #grillaIndex {
+      display: grid;
+      grid-template-areas:
+        "header "
+        "centro"      
+        "footer";
+      grid-template-rows:25% 50% 7%;
+      grid-template-columns: 100%;
+      column-gap: 1rem; 
+   }
+   #grillaContacto {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "centro"      
+      "footer";
+    grid-template-rows:14% auto 7%;
+    grid-template-columns: 100%;
+    column-gap: 1rem; 
+  }
+  #flexFooter {
+    display: flex; 
+    flex-direction: row;
+    /*align-items:center;*/
+    justify-content: center;
+  }
+  #contImgFooter
+  {
+   display: flex; 
+   flex-direction: row;
+   width: 20%;
+   justify-content: space-evenly;
+  }
+  #divDatosForm
+  {
+    width: 100%; 
+  }
+  #contForm
+  {
+    width: 88%;   
+  }
+  .h1PagesContacto{
+    padding:8px;   
+    color: rgb(52, 43, 59);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  
+  form
+  {  
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
+  }
+  form fieldset div
+  {
+     margin-left: 2%;
+     line-height: 24px;     
+  }
+   .ulMenu
+   {
+      text-align: center;    
+   }
+  
+    header
+    {
+     margin-top:18%;   
+   }
+   .navMenu{   
+    margin-top: -4px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+    li {
+      /*display: inline-block;*/
+      
+      font-size: 15px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+    }
+  
+   header
+   {
+    margin-top:4%;   
+  }
+  .navMenu{   
+   margin-top: -14px;
+   margin-bottom: 25px;
+   width: 100%;
+ }
+   li {     
+     padding-left: 3ex; 
+     font-size:15px;
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+   }
+     .h1Pages{
+       padding:8px;   
+       color: rgb(52, 43, 59);
+       font-family: 'Montserrat', sans-serif;
+       font-size: 9px;
+     }
+     .textoIndexFoto{
+       position: absolute;
+       top: 12%;
+       left: 2%;  
+     }    
+     .imgFooter
+     {   
+       width: 25%;        
+       
+     }
+     .pContacto
+     {
+        font-size: 14px;
+     }
+    }  
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+   @media only screen and (min-width:425px) and (max-width:767px)
+   {
+    #grillaIndex {
+      display: grid;
+      grid-template-areas:
+        "header "
+        "centro"      
+        "footer";
+      grid-template-rows:10% 50% 7%;
+      grid-template-columns: 100%;
+      column-gap: 1rem; 
+   }
+   #grillaContacto {
+    display: grid;
+    grid-template-areas:
+      "header "
+      "centro"      
+      "footer";
+    grid-template-rows:6% auto 7%;
+    grid-template-columns: 100%;
+    column-gap: 1rem; 
+  }
+  #flexFooter {
+    display: flex; 
+    flex-direction: row;
+    /*align-items:center;*/
+    justify-content: center;
+  }
+  #contImgFooter
+  {
+   display: flex; 
+   flex-direction: row;
+   width: 20%;
+   justify-content: space-evenly;
+  }
+
+  #divDatosForm
+  {
+    width: 100%; 
+  }
+  #contForm
+  {
+    width: 88%;   
+  }
+  .h1PagesContacto{
+    padding:8px;   
+    color: rgb(52, 43, 59);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  form
+  {  
+     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
+  }
+  form fieldset div
+  {
+     margin-left: 2%;
+     line-height: 24px;     
+  }
+    header
+    {
+     margin-top:2%;   
+   }
+   .navMenu{   
+    margin-top: 1px;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+    li {
+      display: inline-block;
+      padding-left: 2ex; 
+      font-size: 14px;
+      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+    }
+      .h1Pages{
+        padding:8px;   
+        color: rgb(52, 43, 59);
+        font-family: 'Montserrat', sans-serif;
+        font-size: 7px;
+      }
+      .textoIndexFoto{
+        position: absolute;
+        top: 4%;
+        left: 2%;  
+      }    
+      .imgFooter
+      {   
+        width: 20%;                
+      }
+      .pContacto
+      {
+         font-size: 14px;
+      }
+    }  
+
+    @media only screen and (min-width:768px) and (max-width:1023px)
+    {
+      #flexFooter {
+        display: flex; 
+        flex-direction: row;
+        /*align-items:center;*/
+        justify-content: center;
+      }
+      #contImgFooter
+      {
+       display: flex; 
+       flex-direction: row;
+       width: 20%;
+       justify-content: space-evenly;
+      }
+      #divDatosForm
+      {
+        width: 100%; 
+      }
+      #contForm
+      {
+        width: 45%;   
+      }
+     header
+     {
+      margin-top:3%;   
+    }
+    .navMenu{   
+     margin-top: -18px;
+     margin-bottom: 25px;
+     width: 100%;
+   }
+     li {
+       display: inline-block;
+       padding-left: 5ex; 
+       font-size: 14px;
+       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+     }
+       .h1Pages{
+         padding:8px;   
+         color: rgb(52, 43, 59);
+         font-family: 'Montserrat', sans-serif;
+         font-size: 10px;
+       }
+       .textoIndexFoto{
+         position: absolute;
+         top: 3%;
+         left: 2%;  
+       }    
+       .imgFooter
+     {   
+       width: 10%;        
+       
+     }
+     form
+     {  
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
+     }
+     form fieldset div
+     {
+        margin-left: 2%;
+        line-height: 24px;     
+     }
+     .h1PagesContacto{
+      padding:8px;   
+      color: rgb(52, 43, 59);
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+    }
+     .pContacto
+     {
+        font-size: 14px;
+     }
+     }  
+
+     @media only screen and (min-width:1024px) 
+     {
+      header
+      {
+       margin-top:2%;   
+     }
+     
+     .navMenu{   
+      margin-top: -17px;
+      margin-bottom: 25px;
+      width: 100%;
+    }
+   
+   
+      li {
+        display: inline-block;
+        padding-left: 5ex; 
+        font-size: 18px;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+      }
+        .h1Pages{
+          padding:8px;   
+          color: rgb(52, 43, 59);
+          font-family: 'Montserrat', sans-serif;
+          font-size: 12px;
+        }
+        .h1PagesContacto{
+          padding:8px;   
+          color: rgb(52, 43, 59);
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+        }
+        .textoIndexFoto{
+          position: absolute;
+          top: 9%;
+          left: 8%;  
+        }    
+        /* BEGIN Contacto.html*/
+form
+{  
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
+}
+.h2Pages{
+   text-align:left;   
+   padding:8px;   
+   color: rgb(52, 43, 59);
+   font-family: 'Montserrat', sans-serif;
+   font-size: 20px;
+   margin-left: 10%;
+}
+form fieldset div
+{
+   margin-left: 2%;
+   line-height: 28px;
+ 
+}
+.datosForm
+{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif   ;
+   font-size: 15px;
+}
+
+.btnFieldset
+{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 15px;
+   margin-left: 2%;
+   width: 100px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+/* END Contacto.html*/
+}  
