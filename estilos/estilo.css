@@ -1,4 +1,3 @@
-
 * { 
   margin :0;
   padding: 0;
@@ -10,7 +9,7 @@
       "header "
       "centro"      
       "footer";
-    grid-template-rows:auto 90% 7%;
+    grid-template-rows:10vh 84% 7%;
     grid-template-columns: 100%;
     column-gap: 1rem; 
  }
@@ -20,7 +19,7 @@
     "header "
     "centro"      
     "footer";
-  grid-template-rows: auto 90% 7%;
+  grid-template-rows: 10vh 90% 7%;
   grid-template-columns: 100%;
   column-gap: 1rem;  
 }
@@ -47,12 +46,12 @@
   margin-left: auto;
   margin-right: auto;
 }
- body{
+
+body{
   background-color: rgb(186, 202, 177); 
 }
 
-
- .navMenu{   
+.navMenu{   
   margin-top: -13px;
   margin-bottom: 10px;
   width: 100%;
@@ -61,8 +60,8 @@
 .ulMenu
 {
   margin-top: 2%;
-   text-align: right;
-   margin-right: 2.5%;
+  text-align: right;
+  margin-right: 2.5%;
 }
 
 li {
@@ -75,21 +74,22 @@ ul li a
   text-decoration: none;
 }
 
- .border {
+.border {
     border: 1px solid black;          
  }
+
  .borderFooter
  {
   padding-top: 1%;
   text-align: center;
   }
-  .imgFooter
+.imgFooter
   {   
    width: 10%;
   }
 
  header {
-   background-color: yellow;
+   background-color: black;
     grid-area: header;
  }
  footer {
@@ -110,11 +110,8 @@ ul li a
    object-fit:fill;
    width: 100%;
    height: 80vh;
-
  }
  
-
-
 .textoIndexFoto{
   position: absolute;
   top: 10%;
@@ -159,6 +156,22 @@ ul li a
 .first:hover {
   box-shadow: 0 0 40px 40px #6d6c6c inset;
 }
+a{
+	color: #fff;  
+  font-size: 20px;
+	transition: all 2s;
+  overflow: hidden;
+}
+a:hover{
+  color: rgb(186, 202, 177);
+	font-size: 25px;	  
+}
+.LogoMenu
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 @media only screen and (min-width:320px) and (max-width:374px)
@@ -169,7 +182,7 @@ ul li a
       "header "
       "centro"      
       "footer";
-    grid-template-rows:30% 50% 7%;
+    grid-template-rows:29% 39% 7%;
     grid-template-columns: 100%;
     column-gap: 1rem; 
  }
@@ -179,7 +192,7 @@ ul li a
     "header "
     "centro"      
     "footer";
-  grid-template-rows:14% auto 7%;
+  grid-template-rows:18.2% 62% 7%;
   grid-template-columns: 100%;
   column-gap: 1rem; 
 }
@@ -205,19 +218,32 @@ ul li a
   width: 88%;
  
 }
+.LogoMenu {
+   display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: normal;
+  height: 75vh;
+}
 
+.h1Header{ 
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;  
+  margin-top: 2vh;  
+}
  .ulMenu
  {
     text-align: center;    
  }
-  header
+  /*header
   {
     margin-top:18%;   
-  }
+  }*/
  .navMenu{   
-          margin-top: -55px;
-          margin-bottom: 25px;
-          width: 100%;
+          margin-top: 0px;
+          margin-bottom: 50px;
+          
     }
   li {
     /*display: inline-block;*/
@@ -227,15 +253,16 @@ ul li a
   }
     .h1Pages{
       padding:8px;   
-      color: rgb(52, 43, 59);
+      color: white;
       font-family: 'Montserrat', sans-serif;
-      font-size: 8px;
+      font-size: 9px;
     }
     .h1PagesContacto{
       padding:8px;   
       color: rgb(52, 43, 59);
       font-family: 'Montserrat', sans-serif;
       font-size: 14px;
+      text-align: center;
     }
     form
     {  
@@ -276,8 +303,9 @@ ul li a
 
     .textoIndexFoto{
       position: absolute;
-      top: 13%;
-      left: 2%;  
+      top: 77%;
+      left: 0%;  
+      text-align: center;
     }    
     .borderFooter
     {
@@ -293,6 +321,11 @@ ul li a
       width:110px;height:20px;      
       margin: 6px;  
     }
+    .imagen {
+      object-fit: fill;
+      width: 100%;
+      height: 50vh;
+  }
   }
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -538,14 +571,12 @@ ul li a
       {
         width: 45%;   
       }
-     header
-     {
-      margin-top:3%;   
-    }
+    
     .navMenu{   
-     margin-top: -18px;
+     margin-top: 0px;
      margin-bottom: 25px;
      width: 100%;
+     margin-right: 10vh;
    }
      li {
        display: inline-block;
@@ -555,14 +586,22 @@ ul li a
      }
        .h1Pages{
          padding:8px;   
-         color: rgb(52, 43, 59);
+         color: white;
          font-family: 'Montserrat', sans-serif;
-         font-size: 10px;
+         font-size: 13px;
        }
+       .h1Header{ 
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;  
+        margin-top: 2vh;
+        margin-left: 5vh;
+        width: 35vh;
+      }
        .textoIndexFoto{
          position: absolute;
-         top: 3%;
-         left: 2%;  
+         top: 80%;
+         left: 36%;  
        }    
        .imgFooter
      {   
@@ -583,6 +622,7 @@ ul li a
       color: rgb(52, 43, 59);
       font-family: 'Montserrat', sans-serif;
       font-size: 14px;
+      text-align: -webkit-center;
     }
      .pContacto
      {
@@ -594,14 +634,15 @@ ul li a
      {
       header
       {
-        background-color: yellow;
+        background-color: black;
      /*  margin-top:2%;   */
      }
      
      .navMenu{   
-      margin-top: -17px;
+      margin-top: 0px;
       margin-bottom: 25px;
       width: 100%;
+      margin-right: 10vh;
     }
    
    
@@ -611,18 +652,42 @@ ul li a
         font-size: 18px;
         font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
       }
-        .h1Pages{
-          padding:8px;   
-          color: rgb(52, 43, 59);
-          font-family: 'Montserrat', sans-serif;
-          font-size: 12px;
+      .h1Header{ 
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2rem;  
+        margin-top: 2vh;
+        margin-left: 5vh;
+        width: 50vh;
+      }
+      
+  .h1Pages{
+          margin-top: 72vh;
+          margin-left: 50vh;
+          /*padding:8px;   */
+          color:white;
+          font-family: 'Montserrat', sans-serif;          
+          font-size: 1rem;          
+
+          animation-duration: 5s;
+          animation-name: aparecer;
         }
-        .h1PagesContacto{
+
+@keyframes aparecer
+        {
+          0% {opacity:0;}
+          100% {opacity:1;}
+        }
+
+  .h1PagesContacto{
           padding:8px;   
           color: rgb(52, 43, 59);
           font-family: 'Montserrat', sans-serif;
           font-size: 18px;
+          text-align: -webkit-center;
         }
+
+
         .textoIndexFoto{
           position: absolute;
           top: 9%;
