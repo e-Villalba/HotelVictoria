@@ -3,734 +3,219 @@
   padding: 0;
   box-sizing: border-box;
   }
-#grillaIndex {
-    display: grid;
-    grid-template-areas:
-      "header "
-      "centro"      
-      "footer";
-    grid-template-rows:10vh 84% 7%;
-    grid-template-columns: 100%;
-    column-gap: 1rem; 
- }
- #grillaContacto {
-  display: grid;
-  grid-template-areas:
-    "header "
-    "centro"      
-    "footer";
-  grid-template-rows: 10vh 90% 7%;
-  grid-template-columns: 100%;
-  column-gap: 1rem;  
-}
-#flexFooter {
-  display: flex; 
-  flex-direction: row;
-  /*align-items:center;*/
-  justify-content: center;
-}
-#contImgFooter
-{
- display: flex; 
- flex-direction: row;
- width: 20%;
- justify-content: space-evenly;
-}
-#divDatosForm
-{
-  width: 100%; 
-}
-#contForm
-{
-  width: 35%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body{
-  background-color: rgb(186, 202, 177); 
-}
-
-.navMenu{   
-  margin-top: -13px;
-  margin-bottom: 10px;
-  width: 100%;
-}
-
-.ulMenu
-{
-  margin-top: 2%;
-  text-align: right;
-  margin-right: 2.5%;
-}
-
-li {
-  /*display: inline-block;*/
-  font-size: 50px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-}
-ul li a
-{
-  text-decoration: none;
-}
-
-.border {
-    border: 1px solid black;          
- }
-
- .borderFooter
- {
-  padding-top: 1%;
-  text-align: center;
+  body{
+    background-color: rgb(186, 202, 177); 
   }
-.imgFooter
-  {   
-   width: 10%;
-  }
-
- header {
-   background-color: black;
-    grid-area: header;
- }
- footer {
-    grid-area: footer;
- }
- section#centro {
-   grid-area: centro;     
-   height: 100%;
- }
- section#centro > div
- {
-    width: 100%;      
-    height: 100%;
- }
-
-.imagen
- {
-   object-fit:fill;
-   width: 100%;
-   height: 80vh;
- }
- 
-.textoIndexFoto{
-  position: absolute;
-  top: 10%;
-  left: 12%;    
-}
-
-.h1Pages{ 
-  color: rgb(52, 43, 59);
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;  
-}
-
-.btn {
-  box-sizing: border-box;
-  background-color: transparent;
-  border: 1px solid #0e0b0b;
-  border-radius: 0.3em;
-  color: #0c0c0c;
-  cursor: pointer;
-  
-  align-self: center;
-  font-size: 0.7rem;
-  width:140px;height:20px;
-  font-weight: 400;
-  line-height: 1;
-  margin: 11px;  
-  text-decoration: none;
-  text-align: center;  
-  text-transform: uppercase;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
-  font-weight: 700;
-}
-.btn:hover, .btn:focus {
-  color: #fff;
-  outline: 0;
-}
-
-.first {
-  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-}
-.first:hover {
-  box-shadow: 0 0 40px 40px #6d6c6c inset;
-}
-a{
-	color: #fff;  
-  font-size: 20px;
-	transition: all 2s;
-  overflow: hidden;
-}
-a:hover{
-  color: rgb(186, 202, 177);
-	font-size: 25px;	  
-}
-.LogoMenu
-{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width:320px) and (max-width:374px)
- {
-  #grillaIndex {
-    display: grid;
-    grid-template-areas:
-      "header "
-      "centro"      
-      "footer";
-    grid-template-rows:29% 39% 7%;
-    grid-template-columns: 100%;
-    column-gap: 1rem; 
- }
- #grillaContacto {
-  display: grid;
-  grid-template-areas:
-    "header "
-    "centro"      
-    "footer";
-  grid-template-rows:18.2% 62% 7%;
-  grid-template-columns: 100%;
-  column-gap: 1rem; 
-}
-#flexFooter {
-  display: flex; 
-  flex-direction: row;
-  /*align-items:center;*/
-  justify-content: center;
-}
-#contImgFooter
-{
- display: flex; 
- flex-direction: row;
- width: 20%;
- justify-content: space-evenly;
-}
-#divDatosForm
-{
-  width: 100%; 
-}
-#contForm
-{
-  width: 88%;
- 
-}
-.LogoMenu {
-   display: flex; 
-  flex-direction: column;
-  align-items: center;
-  justify-content: normal;
-  height: 75vh;
-}
-
-.h1Header{ 
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 1.5rem;  
-  margin-top: 2vh;  
-}
- .ulMenu
- {
-    text-align: center;    
- }
-  /*header
+  .cardatosContacto
   {
-    margin-top:18%;   
-  }*/
- .navMenu{   
-          margin-top: 0px;
-          margin-bottom: 50px;
-          
-    }
-  li {
-    /*display: inline-block;*/
-    
-    font-size: 15px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-  }
-    .h1Pages{
-      padding:8px;   
-      color: white;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 9px;
-    }
-    .h1PagesContacto{
-      padding:8px;   
-      color: rgb(52, 43, 59);
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      text-align: center;
-    }
-    form
-    {  
-       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
-    }
-    .h2Pages{
-       text-align:left;   
-       padding:8px;   
-       color: rgb(52, 43, 59);
-       font-family: 'Montserrat', sans-serif;
-       font-size: 20px;
-       margin-left: 10%;
-    }
-    form fieldset div
-    {
-       margin-left: 2%;
-       line-height: 24px;     
-    }
-    .datosForm
-    {
-       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif   ;
-       font-size: 12px;
-    }
-    
-    .btnFieldset
-    {
-       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-       
-       margin-left: 2%;
-       width: 100px;
-       margin-top: 10px;
-       margin-bottom: 10px;
-    }
-    .pContacto
-    {
-       font-size: 14px;
-    }
+    background-color: rgb(186, 202, 177); 
 
-    .textoIndexFoto{
-      position: absolute;
-      top: 77%;
-      left: 0%;  
-      text-align: center;
-    }    
-    .borderFooter
-    {
-     padding-top: 1%;
-     text-align: center;
-     }
+  }
+  .imgFooter
+  {   
+    width: 0vw;        
+    padding: 1rem;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid #0e0b0b;
+    border-radius: 0.3em;
+    color: #0c0c0c;
+    cursor: pointer;
+    
+    align-self: center;
+    font-size: 0.7rem;
+    width:140px;height:25px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 11px;  
+    text-decoration: none;
+    text-align: center;  
+    text-transform: uppercase;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  
+  .first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #6d6c6c inset;
+  }
+
+  @keyframes aparecer
+  {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+
+  @media only screen and (min-width:320px) and (max-width:374px)
+  {            
+ 
+       .imgFooter
+       {   
+         
+         width: 60px;
+         padding: 1rem;
+       }
+       .textoIndexFoto{
+        position: relative;
+        /* top: 4%;  */
+       }  
+       .h1Pages{
+        position: absolute;
+         margin-top: 55%;
+         /*margin-left: 50vh;*/
+         /*padding:8px;   */
+         color:white;
+         font-family: 'Montserrat', sans-serif;          
+         font-size: 1rem;          
+ 
+         animation-duration: 5s;
+         animation-name: aparecer;
+         background: rgb(0, 0, 0); /* Fallback color */
+         background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+         color: #f1f1f1; /* Grey text */
+           }
+         }    
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:375px) and (max-width:424px)
+{            
+
     .imgFooter
     {   
-      width: 24%;
-    }
-    .btn {
-      font-size: 0.7rem;
-      width:110px;height:20px;      
-      margin: 6px;  
-    }
-    .imagen {
-      object-fit: fill;
-      width: 100%;
-      height: 50vh;
-  }
-  }
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  @media only screen and (min-width:375px) and (max-width:424px)
-  {
-    #grillaIndex {
-      display: grid;
-      grid-template-areas:
-        "header "
-        "centro"      
-        "footer";
-      grid-template-rows:25% 50% 7%;
-      grid-template-columns: 100%;
-      column-gap: 1rem; 
-   }
-   #grillaContacto {
-    display: grid;
-    grid-template-areas:
-      "header "
-      "centro"      
-      "footer";
-    grid-template-rows:14% auto 7%;
-    grid-template-columns: 100%;
-    column-gap: 1rem; 
-  }
-  #flexFooter {
-    display: flex; 
-    flex-direction: row;
-    /*align-items:center;*/
-    justify-content: center;
-  }
-  #contImgFooter
-  {
-   display: flex; 
-   flex-direction: row;
-   width: 20%;
-   justify-content: space-evenly;
-  }
-  #divDatosForm
-  {
-    width: 100%; 
-  }
-  #contForm
-  {
-    width: 88%;   
-  }
-  .h1PagesContacto{
-    padding:8px;   
-    color: rgb(52, 43, 59);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-  }
-  
-  form
-  {  
-     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
-  }
-  form fieldset div
-  {
-     margin-left: 2%;
-     line-height: 24px;     
-  }
-   .ulMenu
-   {
-      text-align: center;    
-   }
-  
-    header
-    {
-     margin-top:18%;   
-   }
-   .navMenu{   
-    margin-top: -4px;
-    margin-bottom: 25px;
-    width: 100%;
-  }
-    li {
-      /*display: inline-block;*/
       
-      font-size: 15px;
-      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
+      width: 60px;
+      padding: 1rem;
     }
-  
-   header
-   {
-    margin-top:4%;   
-  }
-  .navMenu{   
-   margin-top: -14px;
-   margin-bottom: 25px;
-   width: 100%;
- }
-   li {     
-     padding-left: 3ex; 
-     font-size:15px;
-     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-   }
-     .h1Pages{
-       padding:8px;   
-       color: rgb(52, 43, 59);
-       font-family: 'Montserrat', sans-serif;
-       font-size: 9px;
-     }
-     .textoIndexFoto{
-       position: absolute;
-       top: 12%;
-       left: 2%;  
-     }    
-     .imgFooter
-     {   
-       width: 25%;        
-       
-     }
-     .pContacto
-     {
-        font-size: 14px;
-     }
-     .btn {
-      font-size: 0.7rem;
-      width:110px;height:20px;      
-      margin: 20px;  
-    }
-  }
-
-     
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
-   @media only screen and (min-width:425px) and (max-width:767px)
-   {
-    #grillaIndex {
-      display: grid;
-      grid-template-areas:
-        "header "
-        "centro"      
-        "footer";
-      grid-template-rows:10% 50% 7%;
-      grid-template-columns: 100%;
-      column-gap: 1rem; 
-   }
-   #grillaContacto {
-    display: grid;
-    grid-template-areas:
-      "header "
-      "centro"      
-      "footer";
-    grid-template-rows:6% auto 7%;
-    grid-template-columns: 100%;
-    column-gap: 1rem; 
-  }
-  #flexFooter {
-    display: flex; 
-    flex-direction: row;
-    /*align-items:center;*/
-    justify-content: center;
-  }
-  #contImgFooter
-  {
-   display: flex; 
-   flex-direction: row;
-   width: 20%;
-   justify-content: space-evenly;
-  }
-
-  #divDatosForm
-  {
-    width: 100%; 
-  }
-  #contForm
-  {
-    width: 88%;   
-  }
-  .h1PagesContacto{
-    padding:8px;   
-    color: rgb(52, 43, 59);
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-  }
-  form
-  {  
-     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
-  }
-  form fieldset div
-  {
-     margin-left: 2%;
-     line-height: 24px;     
-  }
-    header
-    {
-     margin-top:2%;   
-   }
-   .navMenu{   
-    margin-top: 1px;
-    margin-bottom: 25px;
-    width: 100%;
-  }
-    li {
-      display: inline-block;
-      padding-left: 2ex; 
-      font-size: 14px;
-      font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-    }
-      .h1Pages{
-        padding:8px;   
-        color: rgb(52, 43, 59);
-        font-family: 'Montserrat', sans-serif;
-        font-size: 7px;
-      }
-      .textoIndexFoto{
-        position: absolute;
-        top: 4%;
-        left: 2%;  
-      }    
-      .imgFooter
-      {   
-        width: 20%;                
-      }
-      .pContacto
-      {
-         font-size: 14px;
-      }
+    .textoIndexFoto{
+      position: relative;
+      top: 4%;  
     }  
+    .h1Pages{
+      position: absolute;
+      margin-top: 60%;
+      /*margin-left: 50vh;*/
+      /*padding:8px;   */
+      color:white;
+      font-family: 'Montserrat', sans-serif;          
+      font-size: 1rem;          
 
-    @media only screen and (min-width:768px) and (max-width:1023px)
-    {
-      #flexFooter {
-        display: flex; 
-        flex-direction: row;
-        /*align-items:center;*/
-        justify-content: center;
-      }
-      #contImgFooter
-      {
-       display: flex; 
-       flex-direction: row;
-       width: 20%;
-       justify-content: space-evenly;
-      }
-      #divDatosForm
-      {
-        width: 100%; 
-      }
-      #contForm
-      {
-        width: 45%;   
-      }
-    
-    .navMenu{   
-     margin-top: 0px;
-     margin-bottom: 25px;
-     width: 100%;
-     margin-right: 10vh;
-   }
-     li {
-       display: inline-block;
-       padding-left: 5ex; 
-       font-size: 14px;
-       font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-     }
-       .h1Pages{
-         padding:8px;   
-         color: white;
-         font-family: 'Montserrat', sans-serif;
-         font-size: 13px;
-       }
-       .h1Header{ 
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 1.5rem;  
-        margin-top: 2vh;
-        margin-left: 5vh;
-        width: 35vh;
-      }
-       .textoIndexFoto{
-         position: absolute;
-         top: 80%;
-         left: 36%;  
-       }    
-       .imgFooter
-     {   
-       width: 10%;        
-       
-     }
-     form
-     {  
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
-     }
-     form fieldset div
-     {
-        margin-left: 2%;
-        line-height: 24px;     
-     }
-     .h1PagesContacto{
-      padding:8px;   
-      color: rgb(52, 43, 59);
-      font-family: 'Montserrat', sans-serif;
-      font-size: 14px;
-      text-align: -webkit-center;
-    }
-     .pContacto
-     {
-        font-size: 14px;
-     }
-     }  
+      animation-duration: 5s;
+      animation-name: aparecer;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      color: #f1f1f1; /* Grey text */
+        }
+      }    
 
-     @media only screen and (min-width:1024px) 
-     {
-      header
-      {
-        background-color: black;
-     /*  margin-top:2%;   */
-     }
-     
-     .navMenu{   
-      margin-top: 0px;
-      margin-bottom: 25px;
-      width: 100%;
-      margin-right: 10vh;
-    }
-   
-   
-      li {
-        display: inline-block;
-        padding-left: 5ex; 
-        font-size: 18px;
-        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif  
-      }
-      .h1Header{ 
-        color: white;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;  
-        margin-top: 2vh;
-        margin-left: 5vh;
-        width: 50vh;
-      }
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:425px) and (max-width:767px)
+{            
+    .imgFooter
+    {   
       
-  .h1Pages{
-          margin-top: 72vh;
-          margin-left: 50vh;
-          /*padding:8px;   */
-          color:white;
-          font-family: 'Montserrat', sans-serif;          
-          font-size: 1rem;          
+      width: 60px;
+      padding: 1rem;
+    }
+    .textoIndexFoto{
+      position: relative;
+      top: 4%;  
+    }  
+    .h1Pages{
+      position: absolute;
+      margin-top: 60%;
+      /*margin-left: 50vh;*/
+      /*padding:8px;   */
+      color:white;
+      font-family: 'Montserrat', sans-serif;          
+      font-size: 1.2rem;          
 
-          animation-duration: 5s;
-          animation-name: aparecer;
+      animation-duration: 5s;
+      animation-name: aparecer;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      color: #f1f1f1; /* Grey text */
         }
+      }
 
-@keyframes aparecer
-        {
-          0% {opacity:0;}
-          100% {opacity:1;}
+      @media only screen and (min-width:768px) and (max-width:1023px)
+      {            
+           .imgFooter
+           {   
+             
+             width: 60px;
+             padding: 1rem;
+           }
+           .textoIndexFoto{
+            position: relative;
+             top: 4%;  
+           }  
+           .h1Pages{
+            position: absolute;
+             margin-top: 70vh;
+             /*margin-left: 50vh;*/
+             /*padding:8px;   */
+             color:white;
+             font-family: 'Montserrat', sans-serif;          
+             font-size: 1.7rem;          
+     
+             animation-duration: 5s;
+             animation-name: aparecer;
+             background: rgb(0, 0, 0); /* Fallback color */
+             background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+             color: #f1f1f1; /* Grey text */
+               }
+             }
+              
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1024px) 
+{
+    .imagen
+    {
+      object-fit:fill; /*cover*/
+      width: 100vw;
+      height: 75vh;
+      vertical-align: text-bottom
+    }
+
+    .imgFooter
+    {   
+      
+      width: 70px;
+      padding: 1rem;
+    }
+    .textoIndexFoto{
+      position: relative;
+      top: 4%;      
+    }  
+    .h1Pages{
+      position: absolute;
+      margin-top: 30%;
+      /*margin-left: 50vh;*/
+      /*padding:8px;   */
+      color:white;
+      font-family: 'Montserrat', sans-serif;          
+      font-size: 2.1rem;          
+
+      animation-duration: 5s;
+      animation-name: aparecer;
+
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+      color: #f1f1f1; /* Grey text */
         }
-
-  .h1PagesContacto{
-          padding:8px;   
-          color: rgb(52, 43, 59);
-          font-family: 'Montserrat', sans-serif;
-          font-size: 18px;
-          text-align: -webkit-center;
-        }
+      }
 
 
-        .textoIndexFoto{
-          position: absolute;
-          top: 9%;
-          left: 8%;  
-        }    
-        /* BEGIN Contacto.html*/
-form
-{  
-   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif    
-}
-.h2Pages{
-   text-align:left;   
-   padding:8px;   
-   color: rgb(52, 43, 59);
-   font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
-   margin-left: 10%;
-}
-form fieldset div
-{
-   margin-left: 2%;
-   line-height: 28px;
- 
-}
-.datosForm
-{
-   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif   ;
-   font-size: 15px;
-}
 
-.btnFieldset
-{
-   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   font-size: 15px;
-   margin-left: 2%;
-   width: 100px;
-   margin-top: 10px;
-   margin-bottom: 10px;
-}
-/* END Contacto.html*/
-.btn {
-  font-size: 0.7rem;
-  width:110px;height:20px;      
-  margin: 22px;  
-}
-}  
