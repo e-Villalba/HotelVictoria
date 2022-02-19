@@ -46,7 +46,7 @@
 /*---------------------Cambio de Color imágenes Footer-------------------------------------*/ 
 .imgFooter:hover
   {
-    filter:invert(1)
+    filter:invert(1);
   }
 /*---------------------Cambio de Estilo Anchor de Menu-------------------------------------*/ 
   a:hover{ font-weight:bold; color:black;}
