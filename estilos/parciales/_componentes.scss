@@ -1,0 +1,106 @@
+body
+{
+  background-color: $backgroundColor_general;
+}
+.cardatosContacto
+{
+   background-color:$backgroundColor_general; 
+}
+.imgFooter
+{   
+  width: 0vw;        
+  padding: 1rem;
+  &:hover
+  {
+    filter:invert(1);
+  }
+}
+
+.btn 
+{
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 1px solid #0e0b0b;
+  border-radius: 0.3em;
+  color: #0c0c0c;
+  cursor: pointer;
+  
+  align-self: center;
+  font-size: 0.7rem;
+  width:140px;height:25px;
+  font-weight: 400;
+  line-height: 1;
+  margin: 11px;  
+  text-decoration: none;
+  text-align: center;  
+  text-transform: uppercase;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  font-weight: 700;
+  &:hover, &:focus 
+  {
+    color: #fff;
+    outline: 0;
+  }
+}
+.ulMargin{
+  margin-left: 0em!important;
+}
+a:hover{ font-weight:bold; color:black;}
+
+input:focus
+{
+ background-color: $backgrounColor_input_btn;
+ color: white;
+ font-weight: bold;
+}
+select:focus
+{
+  background-color: $backgrounColor_input_btn;
+  color: white;
+  font-weight: bold;
+}  
+.txtareaChange:focus
+{
+  background-color: $backgrounColor_input_btn;
+  color: white;
+  font-weight: bold;
+  border-color:black;
+  box-shadow: 0 1.5px 1.5px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,255,255,1);
+  outline: 0 none;
+  
+}  
+
+.first 
+{
+  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  &:hover 
+  {
+    box-shadow: 0 0 40px 40px #6d6c6c inset;
+  }
+}
+h2{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+h3{
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+/*-------Animación de aparecer para el h1 de index.html*/
+@keyframes aparecer
+{
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
