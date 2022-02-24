@@ -1,0 +1,188 @@
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------Comienzo de Media Queries-----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Montserrat:wght@100&display=swap');
+@media only screen and (min-width:320px) and (max-width:374px)
+{            
+
+     .imgFooter
+     {   
+       
+       width: 60px;
+       padding: 1rem;
+     }
+     .textoIndexFoto{
+      position: relative;
+      /* top: 4%;  */
+     }  
+     .h1Pages{
+      position: absolute;
+       margin-top: 55%;
+       /*margin-left: 50vh;*/
+       /*padding:8px;   */
+       color:white;
+       font-family: 'Barlow Condensed', sans-serif;          
+       font-size: 1rem;          
+
+       animation-duration: 5s;
+       animation-name: aparecer;
+       background: rgb(0, 0, 0); /* Fallback color */
+       background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+       color: #f1f1f1; /* Grey text */
+         }
+      h3{
+          font-family: 'Barlow Condensed', sans-serif;
+          font-size: 1.5rem;
+          font-weight: 300;
+          line-height: 1.2;
+      }
+}    
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:375px) and (max-width:424px)
+{            
+
+  .imgFooter
+  {   
+    
+    width: 60px;
+    padding: 1rem;
+  }
+  .textoIndexFoto{
+    position: relative;
+    top: 4%;  
+  }  
+  .h1Pages{
+    position: absolute;
+    margin-top: 60%;
+    /*margin-left: 50vh;*/
+    /*padding:8px;   */
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;          
+    font-size: 1rem;          
+
+    animation-duration: 5s;
+    animation-name: aparecer;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+      }
+  h3{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}     
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:425px) and (max-width:767px)
+{            
+  .imgFooter
+  {   
+    
+    width: 60px;
+    padding: 1rem;
+  }
+  .textoIndexFoto{
+    position: relative;
+    top: 4%;  
+  }  
+  .h1Pages{
+    position: absolute;
+    margin-top: 60%;
+    /*margin-left: 50vh;*/
+    /*padding:8px;   */
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;         
+    font-size: 1.2rem;          
+
+    animation-duration: 5s;
+    animation-name: aparecer;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+      }
+    h3{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:768px) and (max-width:1023px)
+{            
+         .imgFooter
+         {   
+           
+           width: 60px;
+           padding: 1rem;
+         }
+         .textoIndexFoto{
+          position: relative;
+           top: 4%;  
+         }  
+         .h1Pages{
+          position: absolute;
+           margin-top: 58vh;
+           /*margin-left: 50vh;*/
+           /*padding:8px;   */
+           color:white;
+           font-family: 'Barlow Condensed', sans-serif;           
+           font-size: 1.7rem;          
+   
+           animation-duration: 5s;
+           animation-name: aparecer;
+           background: rgb(0, 0, 0); /* Fallback color */
+           background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+           color: #f1f1f1; /* Grey text */
+             }
+          h3{
+              font-family: 'Barlow Condensed', sans-serif;
+              font-size: 1.9rem;
+              font-weight: 300;
+              line-height: 1.2;
+          }
+}             
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width:1024px) 
+{
+  .imagen
+  {
+    object-fit:cover; /*cover*/
+    width: 100vw;
+    height: 80vh;
+    vertical-align: text-bottom
+  }
+
+  .imgFooter
+  {       
+    width: 70px;
+    padding: 1rem;
+  }
+  .textoIndexFoto{
+    position: relative;
+    top: 4%;      
+  }  
+  .h1Pages{
+    position: absolute;
+    margin-top: 70vh;
+    /*margin-left: 50vh;*/
+    /*padding:8px;   */
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;          
+    font-size: 3rem;          
+
+    animation-duration: 5s;
+    animation-name: aparecer;
+
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+      }
+    h3{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 2rem;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+}
