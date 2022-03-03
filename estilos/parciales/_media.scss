@@ -1,6 +1,44 @@
 /*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-----------------------------------------------Comienzo de Media Queries-----------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200&family=Montserrat:wght@100&display=swap');
+@mixin mobile_s
+{
+	@media only screen and (min-width:320px) and (max-width:374px)
+	{
+		@content;
+	}	
+}
+@mixin mobile_m
+{
+	@media only screen and (min-width:375px) and (max-width:424px)
+	{
+		@content;
+	}	
+}
+@mixin mobile_l
+{
+	@media only screen and (min-width:425px) and (max-width:767px)
+	{
+		@content;
+	}	
+}
+@mixin tablet
+{
+	@media only screen and (min-width:768px) and (max-width:1023px)
+	{
+		@content;
+	}	
+}
+@mixin laptop
+{
+	@media only screen and (min-width:1024px) 
+  {	
+		@content;
+	}	
+}
+
+
+
 @media only screen and (min-width:320px) and (max-width:374px)
 {            
 
@@ -14,22 +52,8 @@
       position: relative;
       /* top: 4%;  */
      }  
-     .h1Pages{
-      position: absolute;
-       margin-top: 55%;
-       /*margin-left: 50vh;*/
-       /*padding:8px;   */
-       color:white;
-       font-family: 'Barlow Condensed', sans-serif;          
-       font-size: 1rem;          
 
-       animation-duration: 5s;
-       animation-name: aparecer;
-       background: rgb(0, 0, 0); /* Fallback color */
-       background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-       color: #f1f1f1; /* Grey text */
-         }
-      h3{
+    h3{
           font-family: 'Barlow Condensed', sans-serif;
           font-size: 1.5rem;
           font-weight: 300;
@@ -49,22 +73,22 @@
   .textoIndexFoto{
     position: relative;
     top: 4%;  
-  }  
+  } 
+  /* 
   .h1Pages{
     position: absolute;
     margin-top: 60%;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
     color:white;
     font-family: 'Barlow Condensed', sans-serif;          
     font-size: 1rem;          
 
     animation-duration: 5s;
     animation-name: aparecer;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-      }
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+  }*/
+
   h3{
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 1.7rem;
@@ -86,21 +110,20 @@
     position: relative;
     top: 4%;  
   }  
+  /*
   .h1Pages{
     position: absolute;
     margin-top: 60%;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
     color:white;
     font-family: 'Barlow Condensed', sans-serif;         
     font-size: 1.2rem;          
 
     animation-duration: 5s;
     animation-name: aparecer;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-      }
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+      }*/
     h3{
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 1.7rem;
@@ -121,21 +144,20 @@
           position: relative;
            top: 4%;  
          }  
+         /*
          .h1Pages{
           position: absolute;
            margin-top: 58vh;
-           /*margin-left: 50vh;*/
-           /*padding:8px;   */
            color:white;
            font-family: 'Barlow Condensed', sans-serif;           
            font-size: 1.7rem;          
    
            animation-duration: 5s;
            animation-name: aparecer;
-           background: rgb(0, 0, 0); /* Fallback color */
-           background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-           color: #f1f1f1; /* Grey text */
-             }
+           background: rgb(0, 0, 0); 
+           background: rgba(0, 0, 0, 0.5);
+           color: #f1f1f1; 
+             }*/
           h3{
               font-family: 'Barlow Condensed', sans-serif;
               font-size: 1.9rem;
@@ -163,11 +185,10 @@
     position: relative;
     top: 4%;      
   }  
+  /*
   .h1Pages{
     position: absolute;
     margin-top: 70vh;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
     color:white;
     font-family: 'Barlow Condensed', sans-serif;          
     font-size: 3rem;          
@@ -175,10 +196,10 @@
     animation-duration: 5s;
     animation-name: aparecer;
 
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1; /* Grey text */
-      }
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+      }*/
     h3{
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 2rem;

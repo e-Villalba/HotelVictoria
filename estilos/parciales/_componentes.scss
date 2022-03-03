@@ -8,7 +8,7 @@ body
 }
 .imgFooter
 {   
-  width: 0vw;        
+        
   padding: 1rem;
   &:hover
   {
@@ -47,28 +47,29 @@ body
 }
 a:hover{ font-weight:bold; color:black;}
 
-input:focus
-{
- background-color: $backgrounColor_input_btn;
- color: white;
- font-weight: bold;
+$tipoInputs: ( /*Mapa para inputs de pagina contacto.html*/
+        "input": white,
+        "select":  white
+        /*".txtAreaChange": white*/
+); 
+
+@each $tipoInput,$color in $tipoInputs {
+  /*bucle para usar los valores del mapa y crear las clases*/
+   #{$tipoInput}:hover
+   {
+        background-color: $backgrounColor_input_btn;
+        color: $color;
+        font-weight: bold;     
+   }
 }
-select:focus
+
+.txtAreaChange:hover
 {
-  background-color: $backgrounColor_input_btn;
-  color: white;
-  font-weight: bold;
-}  
-.txtareaChange:focus
-{
-  background-color: $backgrounColor_input_btn;
-  color: white;
-  font-weight: bold;
+  @extend input:hover;
   border-color:black;
   box-shadow: 0 1.5px 1.5px rgba(229, 103, 23, 0.075)inset, 0 0 8px rgba(255,255,255,1);
-  outline: 0 none;
-  
-}  
+  outline: 0 none;  
+}
 
 .first 
 {
@@ -98,9 +99,73 @@ h3{
   font-weight: 300;
   line-height: 1.2;
 }
+.carousel-servicios-imagen {
+  /*height: 65vh;
+  min-height: 300px;
+  height: 600px;
+  width: 800px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: fit;*/
+  overflow: hidden;
+}
+.h1Pages{
+  position: absolute;   
+  color:white;
+  font-family: 'Barlow Condensed', sans-serif;          
+  animation-duration: 5s;
+  animation-name: aparecer;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */    
+  @include mobile_s
+  {
+    margin-top: 55%;       
+    font-size: 1rem;       
+  }
+  @include mobile_m
+  {
+    margin-top: 60%;       
+    font-size: 1rem;       
+  }
+  @include mobile_l
+  {
+    margin-top: 60%;       
+    font-size: 1.2rem;       
+  }
+  @include tablet
+  {
+    margin-top: 58%;       
+    font-size: 1.7rem;       
+  }
+  @include laptop
+  {
+    margin-top: 70vh;       
+    font-size: 3rem;       
+  }
+  
+}
+
 /*-------Animación de aparecer para el h1 de index.html*/
 @keyframes aparecer
 {
   0% {opacity:0;}
   100% {opacity:1;}
+}
+
+.close {
+  font-size: 1.5rem;
+}
+
+.col-12 img {
+  opacity: 0.7;
+  cursor: pointer;
+
+}
+
+.col-12 img:hover {
+  opacity: 1;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

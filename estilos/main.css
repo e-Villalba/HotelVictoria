@@ -7,6 +7,162 @@
           box-sizing: border-box;
 }
 
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------------Comienzo de Media Queries-----------------------------------------------------------------------*/
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .imgFooter {
+    width: 60px;
+    padding: 1rem;
+  }
+  .textoIndexFoto {
+    position: relative;
+    /* top: 4%;  */
+  }
+  h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .imgFooter {
+    width: 60px;
+    padding: 1rem;
+  }
+  .textoIndexFoto {
+    position: relative;
+    top: 4%;
+  }
+  /* 
+  .h1Pages{
+    position: absolute;
+    margin-top: 60%;
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;          
+    font-size: 1rem;          
+
+    animation-duration: 5s;
+    animation-name: aparecer;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+  }*/
+  h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .imgFooter {
+    width: 60px;
+    padding: 1rem;
+  }
+  .textoIndexFoto {
+    position: relative;
+    top: 4%;
+  }
+  /*
+  .h1Pages{
+    position: absolute;
+    margin-top: 60%;
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;         
+    font-size: 1.2rem;          
+
+    animation-duration: 5s;
+    animation-name: aparecer;
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+      }*/
+  h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .imgFooter {
+    width: 60px;
+    padding: 1rem;
+  }
+  .textoIndexFoto {
+    position: relative;
+    top: 4%;
+  }
+  /*
+         .h1Pages{
+          position: absolute;
+           margin-top: 58vh;
+           color:white;
+           font-family: 'Barlow Condensed', sans-serif;           
+           font-size: 1.7rem;          
+   
+           animation-duration: 5s;
+           animation-name: aparecer;
+           background: rgb(0, 0, 0); 
+           background: rgba(0, 0, 0, 0.5);
+           color: #f1f1f1; 
+             }*/
+  h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 1.9rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1024px) {
+  .imagen {
+    -o-object-fit: cover;
+       object-fit: cover;
+    /*cover*/
+    width: 100vw;
+    height: 80vh;
+    vertical-align: text-bottom;
+  }
+  .imgFooter {
+    width: 70px;
+    padding: 1rem;
+  }
+  .textoIndexFoto {
+    position: relative;
+    top: 4%;
+  }
+  /*
+  .h1Pages{
+    position: absolute;
+    margin-top: 70vh;
+    color:white;
+    font-family: 'Barlow Condensed', sans-serif;          
+    font-size: 3rem;          
+
+    animation-duration: 5s;
+    animation-name: aparecer;
+
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); 
+    color: #f1f1f1; 
+      }*/
+  h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+}
+
 body {
   background-color: #bacab1;
 }
@@ -16,7 +172,6 @@ body {
 }
 
 .imgFooter {
-  width: 0vw;
   padding: 1rem;
 }
 
@@ -63,22 +218,21 @@ a:hover {
   color: black;
 }
 
-input:focus {
+/*bucle para usar los valores del mapa y crear las clases*/
+input:hover, .txtAreaChange:hover {
   background-color: #6d6c6c;
   color: white;
   font-weight: bold;
 }
 
-select:focus {
+/*bucle para usar los valores del mapa y crear las clases*/
+select:hover {
   background-color: #6d6c6c;
   color: white;
   font-weight: bold;
 }
 
-.txtareaChange:focus {
-  background-color: #6d6c6c;
-  color: white;
-  font-weight: bold;
+.txtAreaChange:hover {
   border-color: black;
   -webkit-box-shadow: 0 1.5px 1.5px rgba(229, 103, 23, 0.075) inset, 0 0 8px white;
           box-shadow: 0 1.5px 1.5px rgba(229, 103, 23, 0.075) inset, 0 0 8px white;
@@ -118,6 +272,70 @@ h3 {
   line-height: 1.2;
 }
 
+.carousel-servicios-imagen {
+  /*height: 65vh;
+  min-height: 300px;
+  height: 600px;
+  width: 800px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: fit;*/
+  overflow: hidden;
+}
+
+.h1Pages {
+  position: absolute;
+  color: white;
+  font-family: 'Barlow Condensed', sans-serif;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  background: black;
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  /* Grey text */
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .h1Pages {
+    margin-top: 55%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .h1Pages {
+    margin-top: 60%;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .h1Pages {
+    margin-top: 60%;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .h1Pages {
+    margin-top: 58%;
+    font-size: 1.7rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .h1Pages {
+    margin-top: 70vh;
+    font-size: 3rem;
+  }
+}
+
 /*-------Animación de aparecer para el h1 de index.html*/
 @-webkit-keyframes aparecer {
   0% {
@@ -136,197 +354,18 @@ h3 {
   }
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-----------------------------------------------Comienzo de Media Queries-----------------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  .imgFooter {
-    width: 60px;
-    padding: 1rem;
-  }
-  .textoIndexFoto {
-    position: relative;
-    /* top: 4%;  */
-  }
-  .h1Pages {
-    position: absolute;
-    margin-top: 55%;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1rem;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-name: aparecer;
-            animation-name: aparecer;
-    background: black;
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    /* Grey text */
-  }
-  h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
+.close {
+  font-size: 1.5rem;
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 375px) and (max-width: 424px) {
-  .imgFooter {
-    width: 60px;
-    padding: 1rem;
-  }
-  .textoIndexFoto {
-    position: relative;
-    top: 4%;
-  }
-  .h1Pages {
-    position: absolute;
-    margin-top: 60%;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1rem;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-name: aparecer;
-            animation-name: aparecer;
-    background: black;
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    /* Grey text */
-  }
-  h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
+.col-12 img {
+  opacity: 0.7;
+  cursor: pointer;
 }
 
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-  .imgFooter {
-    width: 60px;
-    padding: 1rem;
-  }
-  .textoIndexFoto {
-    position: relative;
-    top: 4%;
-  }
-  .h1Pages {
-    position: absolute;
-    margin-top: 60%;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.2rem;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-name: aparecer;
-            animation-name: aparecer;
-    background: black;
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    /* Grey text */
-  }
-  h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.7rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  .imgFooter {
-    width: 60px;
-    padding: 1rem;
-  }
-  .textoIndexFoto {
-    position: relative;
-    top: 4%;
-  }
-  .h1Pages {
-    position: absolute;
-    margin-top: 58vh;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.7rem;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-name: aparecer;
-            animation-name: aparecer;
-    background: black;
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    /* Grey text */
-  }
-  h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.9rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
-}
-
-/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
-@media only screen and (min-width: 1024px) {
-  .imagen {
-    -o-object-fit: cover;
-       object-fit: cover;
-    /*cover*/
-    width: 100vw;
-    height: 80vh;
-    vertical-align: text-bottom;
-  }
-  .imgFooter {
-    width: 70px;
-    padding: 1rem;
-  }
-  .textoIndexFoto {
-    position: relative;
-    top: 4%;
-  }
-  .h1Pages {
-    position: absolute;
-    margin-top: 70vh;
-    /*margin-left: 50vh;*/
-    /*padding:8px;   */
-    color: white;
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 3rem;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-name: aparecer;
-            animation-name: aparecer;
-    background: black;
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    /* Grey text */
-  }
-  h3 {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.2;
-  }
+.col-12 img:hover {
+  opacity: 1;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /*# sourceMappingURL=main.css.map */
