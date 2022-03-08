@@ -254,9 +254,33 @@ select:hover {
 
 h2 {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 3.5rem;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h2 {
+    font-size: 3.5rem;
+  }
 }
 
 h3 {
@@ -266,6 +290,59 @@ h3 {
   line-height: 1.2;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  h3 {
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  h3 {
+    font-size: 2.25rem;
+  }
+}
+
+.parTextos {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .parTextos {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 424px) {
+  .parTextos {
+    font-size: 1.35rem;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+  .parTextos {
+    font-size: 1.45rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .parTextos {
+    font-size: 1.5rem;
+  }
+}
+
 .display-3 {
   font-size: 4.5rem;
   font-weight: 300;
@@ -273,15 +350,6 @@ h3 {
 }
 
 .carousel-servicios-imagen {
-  /*height: 65vh;
-  min-height: 300px;
-  height: 600px;
-  width: 800px;
-  background: no-repeat center center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: fit;*/
   overflow: hidden;
 }
 
@@ -354,18 +422,31 @@ h3 {
   }
 }
 
-.close {
-  font-size: 1.5rem;
+/*Prueba ejemplo galeria*/
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-.col-12 img {
-  opacity: 0.7;
-  cursor: pointer;
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  -webkit-box-flex: 25%;
+          flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-.col-12 img:hover {
-  opacity: 1;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
