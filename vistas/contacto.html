@@ -15,7 +15,8 @@
 </head>
 <body>  
   <div class="container-fluid">
-        <div class="row">          
+        <div class="row">    
+            <!--Inicio Menú-->         
             <div class="col-md-12 p-0">
                   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                       <div class="container-fluid ">
@@ -46,9 +47,10 @@
                       </div>
                   </nav>
             </div>
+            <!--Fin Menú-->   
         </div>
   </div>      
-<!--Cuerpo de los datos del  Contacto-->
+
   <main>
     <div class="container">
         <div class="row">
@@ -57,6 +59,7 @@
             </div>
         </div>
     </div>
+    <!--Inicio Cuerpo de los datos del  Contacto-->
     <form id="divDatosForm" action="" method="" enctype="">       
           <div class="container">
                 <div class="row">
@@ -76,35 +79,33 @@
                           <label class="pContacto datosContacto" for="idNombre">Nombre</label>
                         </div>
                         <div><input class="datosForm datosContacto" type="text" name="campoNombre" id="idNombre" placeholder="Ingrese su Nombre"></div>
-
                         <div><label class="pContacto p-1 datosContacto" for="idApellido">Apellido</label></div>                
                         <div><input class="datosForm datosContacto" type="text" name="campoApellido" id="idApellido" placeholder="Ingrese su Apellido"></div>
                         <div><label class="pContacto p-1 datosContacto" for="userEmail">Ingrese su e-mail</label></div>
-                            <div>
-                                <input class="datosForm datosContacto" type="email" name="" id="userEmail" placeholder="Ingrese su e-mail">
-                            </div>
-                            <div>
-                                <input class="datosForm datosContacto" type="checkbox" name="" id="userNovedades" required>
-                                <label class="pContacto p-1 mb-0 datosContacto" for="userNovedades">Me gustaría recibir novedades por email?</label>
-                            </div>
-                            <div>
-                              <label class="pContacto p-1 mb-0 datosContacto" for="userComoVac">Cómo disfrutás tus vacaciones?</label>
-                            </div>
-                            <div>
-                              <select class="datosForm datosContacto" name="campouserComoVac" id="userComoVac" >
-                                  <option class="pContacto " value="" disabled selected>Como disfrutás tus vacaciones</option>
-                                  <option class="pContacto " value="Solo">Solo</option>
-                                  <option class="pContacto " value="Familia">En Familia</option>
-                                  <option class="pContacto " value="Grupo">En grupo de amigos</option>
-                              </select>
-                          </div>
-                          <!-- Textarea with class .w-50 -->
-                          <div class="form-outline p-3 text-center" >                            
+                        <div>
+                             <input class="datosForm datosContacto" type="email" name="" id="userEmail" placeholder="Ingrese su e-mail">
+                        </div>
+                        <div>
+                            <input class="datosForm datosContacto" type="checkbox" name="" id="userNovedades" required>
+                            <label class="pContacto p-1 mb-0 datosContacto" for="userNovedades">Me gustaría recibir novedades por email?</label>
+                        </div>
+                        <div>
+                            <label class="pContacto p-1 mb-0 datosContacto" for="userComoVac">Cómo disfrutás tus vacaciones?</label>
+                        </div>
+                        <div>
+                          <select class="datosForm datosContacto" name="campouserComoVac" id="userComoVac" >
+                            <option class="pContacto " value="" disabled selected>Como disfrutás tus vacaciones</option>
+                            <option class="pContacto " value="Solo">Solo</option>
+                            <option class="pContacto " value="Familia">En Familia</option>
+                            <option class="pContacto " value="Grupo">En grupo de amigos</option>
+                         </select>
+                        </div>                          
+                        <div class="form-outline p-3 text-center" >                            
                             <textarea class="form-control txtAreaChange datosContacto" placeholder="Dejanos tu comentario" id="floatingTextarea"></textarea>                           
-                          </div>
-                          <div >
-                            <input class="btn first" type="submit" value="Enviar"> 
-                            <input class="btn first" type="reset" value="Borrar Datos">                                      
+                        </div>
+                        <div >
+                          <input class="btn first" type="submit" value="Enviar"> 
+                        <input class="btn first" type="reset" value="Borrar Datos">                                      
                         </div> 
                         </div>
                         </div>
@@ -114,11 +115,13 @@
           </div>
         </fieldset>                   
     </form>
+    <!--Fin Cuerpo de los datos del  Contacto-->
   </main> 
 
 <footer >
+   <!--Inicio Redes Sociales-->   
     <div class="container">
-      <div class="row mb-3">        
+      <div class="row mb-3">                
           <div class="col-md-12 d-flex justify-content-center">
             <a href="https://www.facebook.com/" target="_blank"><img class="imgFooter" src="../imagenes/iconos/facebook.png" alt="Facebook" ></a>
             <a href="https://www.instagram.com/" target="_blank"><img class="imgFooter" src="../imagenes/iconos/instagram.png" alt="Instagram"></a>  
@@ -126,6 +129,7 @@
           </div>        
       </div>
     </div>
+   <!--Fin Redes Sociales-->       
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>    
 </body>
