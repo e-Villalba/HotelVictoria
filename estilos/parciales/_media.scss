@@ -37,8 +37,20 @@
 	}	
 }
 
-
-
+@mixin tabletParaAbajo
+{
+	@media only screen and (min-width:320px) and (max-width:768px)
+  {	
+		@content;
+	}	
+}
+@mixin tabletParaArriba
+{
+	@media only screen and (min-width:769px) 
+  {	
+		@content;
+	}	
+}
 @media only screen and (min-width:320px) and (max-width:374px)
 {            
 
@@ -144,20 +156,6 @@
           position: relative;
            top: 4%;  
          }  
-         /*
-         .h1Pages{
-          position: absolute;
-           margin-top: 58vh;
-           color:white;
-           font-family: 'Barlow Condensed', sans-serif;           
-           font-size: 1.7rem;          
-   
-           animation-duration: 5s;
-           animation-name: aparecer;
-           background: rgb(0, 0, 0); 
-           background: rgba(0, 0, 0, 0.5);
-           color: #f1f1f1; 
-             }*/
           h3{
               font-family: 'Barlow Condensed', sans-serif;
               font-size: 1.9rem;
@@ -178,7 +176,7 @@
 
   .imgFooter
   {       
-    width: 70px;
+    width: 65px;
     padding: 1rem;
   }
   .textoIndexFoto{

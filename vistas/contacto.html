@@ -29,9 +29,6 @@
                               <li class="nav-item">                            
                                 <a class="nav-link" href="../index.html"><i class="fa-solid fa-circle-check" style="filter:invert(0)"></i> Inicio</a>                          
                               </li>
-                              <li class="nav-item">                          
-                                <a class="nav-link active" href="#"><i class="fa-solid fa-user" style="filter:invert(0)"></i>  Contacto</a>
-                              </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="../vistas/servicios.html"><i class="fa-solid fa-bell-concierge" style="filter:invert(0)"></i> Servicios</a>
                               </li>
@@ -40,6 +37,9 @@
                               </li>
                               <li class="nav-item">
                                 <a class="nav-link" href="../vistas/ubicacion.html"><i class="fa-solid fa-location-dot" style="filter:invert(0)"></i> Ubicación</a>
+                              </li>
+                              <li class="nav-item">                          
+                                <a class="nav-link active" href="#"><i class="fa-solid fa-user" style="filter:invert(0)"></i>  Contacto</a>
                               </li>
                           </ul>
                         </div>
@@ -66,43 +66,45 @@
                           <div class="card-body">  
                         <div>
                             <h3 class="mb-0">Info Personal</h3>                    
-                            <p class="pContacto p-0 mb-0">Ya nos visitaste antes?</p>                  
-                            <input class="datosForm p-0"  type="radio" name="campoUserVisitanteS" id="idVisitanteS" value="S">Si    
-                            <input class="datosForm p-0" type="radio" name="campoUserVisitanteN" id="idVisitanteN" value="N">No
+                            <p class="pContacto p-0 mb-0 datosContacto">Ya nos visitaste antes?</p>                  
+                            <p class="datosContacto p-0 mb-0">
+                            <input class="datosForm p-0 datosContacto"   type="radio" name="campoUserVisitanteS" id="idVisitanteS" value="S">Si    
+                            <input class="datosForm p-0 datosContacto" type="radio" name="campoUserVisitanteN" id="idVisitanteN" value="N">No
+                            </p>
                         </div>        
                         <div>
-                          <label class="pContacto" for="idNombre">Nombre</label>
+                          <label class="pContacto datosContacto" for="idNombre">Nombre</label>
                         </div>
-                        <div><input class="datosForm" type="text" name="campoNombre" id="idNombre" placeholder="Ingrese su Nombre"></div>
+                        <div><input class="datosForm datosContacto" type="text" name="campoNombre" id="idNombre" placeholder="Ingrese su Nombre"></div>
 
-                        <div><label class="pContacto p-1" for="idApellido">Apellido</label></div>                
-                        <div><input class="datosForm" type="text" name="campoApellido" id="idApellido" placeholder="Ingrese su Apellido"></div>
-                        <div><label class="pContacto p-1" for="userEmail">Ingrese su e-mail</label></div>
+                        <div><label class="pContacto p-1 datosContacto" for="idApellido">Apellido</label></div>                
+                        <div><input class="datosForm datosContacto" type="text" name="campoApellido" id="idApellido" placeholder="Ingrese su Apellido"></div>
+                        <div><label class="pContacto p-1 datosContacto" for="userEmail">Ingrese su e-mail</label></div>
                             <div>
-                                <input class="datosForm" type="email" name="" id="userEmail" placeholder="Ingrese su e-mail">
+                                <input class="datosForm datosContacto" type="email" name="" id="userEmail" placeholder="Ingrese su e-mail">
                             </div>
                             <div>
-                                <input class="datosForm" type="checkbox" name="" id="userNovedades" required>
-                                <label class="pContacto p-1 mb-0" for="userNovedades">Me gustaría recibir novedades por email?</label>
+                                <input class="datosForm datosContacto" type="checkbox" name="" id="userNovedades" required>
+                                <label class="pContacto p-1 mb-0 datosContacto" for="userNovedades">Me gustaría recibir novedades por email?</label>
                             </div>
                             <div>
-                              <label class="pContacto p-1 mb-0" for="userComoVac">Cómo disfrutás tus vacaciones?</label>
+                              <label class="pContacto p-1 mb-0 datosContacto" for="userComoVac">Cómo disfrutás tus vacaciones?</label>
                             </div>
                             <div>
-                              <select class="datosForm" name="campouserComoVac" id="userComoVac" >
-                                  <option class="pContacto" value="" disabled selected>Como disfrutás tus vacaciones</option>
-                                  <option class="pContacto" value="Solo">Solo</option>
-                                  <option class="pContacto" value="Familia">En Familia</option>
-                                  <option class="pContacto" value="Grupo">En grupo de amigos</option>
+                              <select class="datosForm datosContacto" name="campouserComoVac" id="userComoVac" >
+                                  <option class="pContacto " value="" disabled selected>Como disfrutás tus vacaciones</option>
+                                  <option class="pContacto " value="Solo">Solo</option>
+                                  <option class="pContacto " value="Familia">En Familia</option>
+                                  <option class="pContacto " value="Grupo">En grupo de amigos</option>
                               </select>
                           </div>
                           <!-- Textarea with class .w-50 -->
                           <div class="form-outline p-3 text-center" >                            
-                            <textarea class="form-control txtAreaChange" placeholder="Dejanos tu comentario" id="floatingTextarea"></textarea>                           
+                            <textarea class="form-control txtAreaChange datosContacto" placeholder="Dejanos tu comentario" id="floatingTextarea"></textarea>                           
                           </div>
                           <div >
-                            <input class="btn first " type="submit" value="Enviar"> 
-                            <input class="btn first " type="reset" value="Borrar Datos">                                      
+                            <input class="btn first" type="submit" value="Enviar"> 
+                            <input class="btn first" type="reset" value="Borrar Datos">                                      
                         </div> 
                         </div>
                         </div>
