@@ -1,3 +1,5 @@
+
+
 body
 {
   background-color: $backgroundColor_general;
@@ -121,10 +123,75 @@ h3{
   }
 }
 
+.menuBurguer  
+{
+   @include mobile_s
+  {
+    font-size: 1rem;    
+  }
+}
+.letraLogo
+{
+  font-family: 'Bitter', serif;
+  margin-bottom: 0vh;
+  @include mobile_s
+  {
+    font-size: 1.2rem;
+    margin-left: 0.1rem;    
+  }
+  @include mobile_m
+  {
+    font-size: 1.4rem;
+    margin-left: 0.4rem;
+  }
+  @include mobile_l
+  {
+    font-size: 1.5rem;
+    margin-left: 0.8rem;
+  }
+  @include tablet
+  {
+    font-size: 2.45rem;
+    margin-left: 4.5rem;
+  } 
+  @include laptop
+  {
+    font-size: 2.45rem;
+    margin-left: 1.5rem;
+  }
+}
+.imgLogo
+{
+  filter:invert(1);   
+  @include mobile_s
+  {
+    margin-left: 0.1;
+    width: 21%;
+  }
+  @include mobile_m
+  {
+    width: 18%;
+  }
+  @include mobile_l
+  {
+    width: 16%;
+  }
+  @include tablet
+  {
+    width: 10%;
+  } 
+  @include laptop
+  {
+    width: 5%;
+
+  }
+}
+
 .parTextos
 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 1.5rem;
+  text-decoration: none;
   @include mobile_s
   {
     font-size: 1.25rem;
@@ -141,6 +208,7 @@ h3{
   {
     font-size: 1.5rem;
   } 
+
 }
 
 .display-3 {
